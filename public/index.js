@@ -1,3 +1,5 @@
+import { checkForIndexedDb, saveRecord } from  "./indexedDb";
+
 let transactions = [];
 let myChart;
 
@@ -77,6 +79,9 @@ function populateChart() {
     }
   });
 }
+
+
+checkForIndexedDb()
 
 function sendTransaction(isAdding) {
   let nameEl = document.querySelector("#t-name");
