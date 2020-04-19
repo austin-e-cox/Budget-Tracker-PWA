@@ -41,6 +41,8 @@ export function saveRecord(record) {
 }
 
 function checkDatabase() {
+  console.log("indexedDb");
+
   // open a transaction on your pending db
   const transaction = db.transaction(["pending"], "readwrite");
   // access your pending object store
