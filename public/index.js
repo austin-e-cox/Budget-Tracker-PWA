@@ -80,7 +80,7 @@ function populateChart() {
   });
 }
 
-
+// chek and make sure indexedDb exists on the web browser
 checkForIndexedDb()
 
 function sendTransaction(isAdding) {
